@@ -14,6 +14,7 @@ export default defineConfigWithTheme<VPThemeConfig>({
       },
     },
   },
+  base:'/myblog3/',
 
   title: 'Template Starter Demo',
   description: 'A VitePress Theme Starter Project',
