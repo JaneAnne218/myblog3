@@ -1,27 +1,29 @@
-# .github/workflows/release.yml
-
-name: Release
-
-permissions:
-  contents: write
+## 写一个pnpm的github action
+name: Deployhahah
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      branch-1
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
         with:
-          fetch-depth: 0
-
-      - uses: actions/setup-node@v3
+          node-version: 16
+          registry-url: https://registry.npm.taobao.org
+      - uses: pnpm/action-setup@v2
         with:
-          node-version: 18.x
-
-      - run: npx changelogen gh release
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          version: latest
+      - run: pnpm install
+      - run: pnpm run build
+      - run: pnpm run test
+      
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUBTOKEN }}
+          publish_dir: docs/.vitepress/dist
