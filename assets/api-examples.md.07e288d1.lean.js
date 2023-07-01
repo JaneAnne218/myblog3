@@ -1,4 +1,4 @@
-import { u as useData, o as openBlock, c as createElementBlock, z as createBaseVNode, t as toDisplayString, b as unref, O as createStaticVNode, a as createTextVNode } from "./chunks/framework.e5b3d34b.js";
+import { u as useData, o as openBlock, c as createElementBlock, z as createBaseVNode, t as toDisplayString, b as unref, O as createStaticVNode, a as createTextVNode } from "./chunks/framework.aba535ac.js";
 const _hoisted_1 = /* @__PURE__ */ createStaticVNode("", 6);
 const _hoisted_7 = /* @__PURE__ */ createBaseVNode("h3", {
   id: "page-data",

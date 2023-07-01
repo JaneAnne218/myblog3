@@ -1,5 +1,5 @@
-import { d as defineComponent, o as openBlock, A as createBlock, B as withCtx, b as unref, z as createBaseVNode, _ as _export_sfc, c as createElementBlock, K as inBrowser, a2 as useUpdateHead, u as useData, p as onMounted, k as watchEffect, a3 as usePrefetch, a4 as useCopyCode, a5 as useCodeGroups, a6 as h, a7 as RouterSymbol, a8 as initData, a9 as dataSymbol, aa as Content, ab as ClientOnly, ac as siteDataRef, ad as createSSRApp, ae as createRouter, af as pathToFile, ag as __vitePreload } from "./chunks/framework.e5b3d34b.js";
-import { t as theme$1 } from "./chunks/theme.61f68ec0.js";
+import { d as defineComponent, o as openBlock, A as createBlock, B as withCtx, b as unref, z as createBaseVNode, _ as _export_sfc, c as createElementBlock, K as inBrowser, a2 as useUpdateHead, u as useData, p as onMounted, k as watchEffect, a3 as usePrefetch, a4 as useCopyCode, a5 as useCodeGroups, a6 as h, a7 as RouterSymbol, a8 as initData, a9 as dataSymbol, aa as Content, ab as ClientOnly, ac as siteDataRef, ad as createSSRApp, ae as createRouter, af as pathToFile, ag as __vitePreload } from "./chunks/framework.aba535ac.js";
+import { t as theme$1 } from "./chunks/theme.96a6db96.js";
 const _hoisted_1$1 = /* @__PURE__ */ createBaseVNode("div", null, "Before Doc Content", -1);
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "ThemeLayout",
